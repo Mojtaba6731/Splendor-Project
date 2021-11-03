@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="/bower_components/components-font-awesome/css/all.min.css"
+    />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="board-game">
+      <div class="user1-board">
+        <div class="cards-and-coins">
+          <div class="user1-cards">
+            <div class="cards-column">
+              <div
+                class="card"
+                draggable="true"
+                data-parent="user1-cards"
+              ></div>
+              <div
+                class="card"
+                draggable="true"
+                data-parent="user1-cards"
+              ></div>
+              <div
+                class="card"
+                draggable="true"
+                data-parent="user1-cards"
+              ></div>
+            </div>
+            <div class="cards-column">
+              <div
+                class="card"
+                draggable="true"
+                data-parent="user1-cards"
+              ></div>
+              <div
+                class="card"
+                draggable="true"
+                data-parent="user1-cards"
+              ></div>
+              <div class="card reserve-cards" draggable="true"></div>
+            </div>
+          </div>
+
+          <div class="user1-coins">
+            <div
+              data-parent="user1-coins"
+              data-user1-coins="red"
+              class="coin coins-red"
+              draggable="true"
+            >
+              0
+            </div>
+            <div
+              data-parent="user1-coins"
+              data-user1-coins="blue"
+              class="coin coins-blue"
+              draggable="true"
+            >
+              0
+            </div>
+            <div
+              data-parent="user1-coins"
+              data-user1-coins="green"
+              class="coin coins-green"
+              draggable="true"
+            >
+              0
+            </div>
+            <div
+              data-parent="user1-coins"
+              data-user1-coins="white"
+              class="coin coins-white"
+              draggable="true"
+            >
+              0
+            </div>
+            <div
+              data-parent="user1-coins"
+              data-user1-coins="black"
+              class="coin coins-black"
+              draggable="true"
+            >
+              0
+            </div>
+            <div
+              data-parent="user1-coins"
+              data-user1-coins="gold"
+              class="coin coins-gold"
+              draggable="true"
+            >
+              0
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-board">
+        <div class="coins">
+          <div
+            class="coin coins-red"
+            data-parent="board-coins"
+            draggable="true"
+          >
+            4
+          </div>
+          <div
+            class="coin coins-blue"
+            data-parent="board-coins"
+            draggable="true"
+          >
+            4
+          </div>
+          <div
+            class="coin coins-green"
+            data-parent="board-coins"
+            draggable="true"
+          >
+            4
+          </div>
+          <div
+            class="coin coins-white"
+            data-parent="board-coins"
+            draggable="true"
+          >
+            4
+          </div>
+          <div
+            class="coin coins-black"
+            data-parent="board-coins"
+            draggable="true"
+          >
+            4
+          </div>
+          <div
+            class="coin coins-gold"
+            data-parent="board-coins"
+            draggable="true"
+          >
+            5
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="nobels">
+            <div class="random-nobel" data-parent="nobel" data-nobel-mark="1">
+              <img class="random-nobel-1" src="" alt="Nobel" />
+            </div>
+            <div class="random-nobel" data-parent="nobel" data-nobel-mark="2">
+              <img class="random-nobel-2" src="" alt="Nobel" />
+            </div>
+            <div class="random-nobel" data-parent="nobel" data-nobel-mark="3">
+              <img class="random-nobel-3" src="" alt="Nobel" />
+            </div>
+          </div>
+
+          <div class="sets">
+            <div class="card set-lvl1">
+              <p>Splendor</p>
+              <p>III</p>
+            </div>
+            <div class="card set-lvl2">
+              <p>Splendor</p>
+              <p>II</p>
+            </div>
+            <div class="card set-lvl3">
+              <p>Splendor</p>
+              <p>I</p>
+            </div>
+          </div>
+          <div class="cards-random">
+            <div class="cards-lvl3">
+              <div class="card" data-card-lvl="three">
+                <img
+                  class="card-lvl3-1"
+                  src=""
+                  alt="Card-lvl3"
+                  draggable="true"
+                />
+              </div>
+              <div class="card" data-card-lvl="three">
+                <img
+                  class="card-lvl3-2"
+                  src=""
+                  alt="Card-lvl3"
+                  draggable="true"
+                />
+              </div>
+              <div class="card" data-card-lvl="three">
+                <img
+                  class="card-lvl3-3"
+                  src=""
+                  alt="Card-lvl3"
+                  draggable="true"
+                />
+              </div>
+              <div class="card" data-card-lvl="three">
+                <img
+                  class="card-lvl3-4"
+                  src=""
+                  alt="Card-lvl3"
+                  draggable="true"
+                />
+              </div>
+            </div>
+
+            <div class="cards-lvl2">
+              <div class="card" data-card-lvl="two">
+                <img
+                  class="card-lvl2-1"
+                  src=""
+                  alt="Card-lvl2"
+                  draggable="true"
+                />
+              </div>
+              <div class="card" data-card-lvl="two">
+                <img
+                  class="card-lvl2-2"
+                  src=""
+                  alt="Card-lvl2"
+                  draggable="true"
+                />
+              </div>
+              <div class="card" data-card-lvl="two">
+                <img
+                  class="card-lvl2-3"
+                  src=""
+                  alt="Card-lvl2"
+                  draggable="true"
+                />
+              </div>
+              <div class="card" data-card-lvl="two">
+                <img
+                  class="card-lvl2-4"
+                  src=""
+                  alt="Card-lvl2"
+                  draggable="true"
+                />
+              </div>
+            </div>
+
+            <div class="cards-lvl1">
+              <div class="card" data-card-lvl="one">
+                <img
+                  class="card-lvl1-1"
+                  src=""
+                  alt="Card-lvl2"
+                  draggable="true"
+                />
+              </div>
+              <div class="card" data-card-lvl="one">
+                <img
+                  class="card-lvl1-2"
+                  src=""
+                  alt="Card-lvl2"
+                  draggable="true"
+                />
+              </div>
+              <div class="card" data-card-lvl="one">
+                <img
+                  class="card-lvl1-3"
+                  src=""
+                  alt="Card-lvl2"
+                  draggable="true"
+                />
+              </div>
+              <div class="card" data-card-lvl="one">
+                <img
+                  class="card-lvl1-4"
+                  src=""
+                  alt="Card-lvl2"
+                  draggable="true"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="user2-board">
+        <div class="cards-and-coins">
+          <div class="user2-coins">
+            <div data-user2-coins="red" class="coin coins-red" draggable="true">
+              0
+            </div>
+            <div
+              data-parent="user2-coins"
+              data-user2-coins="blue"
+              class="coin coins-blue"
+              draggable="true"
+            >
+              0
+            </div>
+            <div
+              data-parent="user2-coins"
+              data-user2-coins="green"
+              class="coin coins-green"
+              draggable="true"
+            >
+              0
+            </div>
+            <div
+              data-parent="user2-coins"
+              data-user2-coins="white"
+              class="coin coins-white"
+              draggable="true"
+            >
+              0
+            </div>
+            <div
+              data-parent="user2-coins"
+              data-user2-coins="black"
+              class="coin coins-black"
+              draggable="true"
+            >
+              0
+            </div>
+            <div
+              data-parent="user2-coins"
+              data-user2-coins="gold"
+              class="coin coins-gold"
+              draggable="true"
+            >
+              0
+            </div>
+          </div>
+
+          <div class="user2-cards">
+            <div class="cards-column">
+              <div
+                class="card"
+                draggable="true"
+                data-parent="user2-cards"
+              ></div>
+              <div
+                class="card"
+                draggable="true"
+                data-parent="user2-cards"
+              ></div>
+              <div
+                class="card reserve-cards"
+                draggable="true"
+                data-parent="user2-cards"
+              ></div>
+            </div>
+            <div class="cards-column">
+              <div
+                class="card"
+                draggable="true"
+                data-parent="user2-cards"
+              ></div>
+              <div
+                class="card"
+                draggable="true"
+                data-parent="user2-cards"
+              ></div>
+              <div
+                class="card"
+                draggable="true"
+                data-parent="user2-cards"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

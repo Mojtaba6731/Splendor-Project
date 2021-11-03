@@ -1,0 +1,20 @@
+{
+  "name": "bower init",
+  "homepage": "https://github.com/Mojtaba6731/Splendor-Project",
+  "authors": [
+    "Mojtaba67 <Mojtabasaboori376@gmail.com>"
+  ],
+  "description": "splendor",
+  "main": "y",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "components-font-awesome": "^5.15.4"
+  }
+}

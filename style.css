@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.random-nobel,
+.card {
+  border: 1px solid rgb(170, 170, 170);
+  height: 160px;
+  width: 100px;
+  margin: 8px 6px;
+}
+.random-nobel {
+  border: none;
+}
+
+img {
+  height: 160px;
+  width: 100px;
+}
+.cards-column > .card {
+  height: 200px;
+}
+.coin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  margin: 12px;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 30px;
+}
+
+.coins-red {
+  background-color: rgb(255, 0, 0);
+}
+.coins-gold {
+  background-color: rgb(231, 184, 64);
+}
+.coins-blue {
+  background-color: rgb(92, 158, 219);
+}
+.coins-green {
+  background-color: rgb(3, 167, 30);
+}
+.coins-white {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.coins-black {
+  background-color: rgb(0, 0, 0);
+}
+
+.board-game {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 95vh;
+}
+
+/* main board */
+.main-board {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.coins {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.cards {
+  display: flex;
+  flex-flow: row;
+}
+.sets {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  margin-right: 12px;
+}
+.set-lvl1,
+.set-lvl2,
+.set-lvl3 {
+  background-color: #e7da40;
+  border: 2px solid rgb(22, 22, 22);
+  color: rgb(22, 22, 22);
+  font-size: 18px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nobels {
+  margin-right: 16px;
+  display: flex;
+  flex-flow: column;
+}
+.cards-lvl1,
+.cards-lvl2,
+.cards-lvl3 {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+/* main board end */
+
+/* Users */
+.user1-coins,
+.user2-coins {
+  display: flex;
+  flex-flow: column;
+}
+.cards-and-coins {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.user1-cards,
+.user2-cards {
+  display: flex;
+  flex-flow: row;
+}
+.cards-column {
+  height: 95vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+/* to make the User-Cards look Stair  */
+[data-parent="user1-cards"] > :not(:first-child),
+[data-parent="user2-cards"] > :not(:first-child) {
+  margin-top: -160px;
+}
+.nobels-mark {
+  display: flex;
+  flex-flow: column;
+  align-items: space-between;
+  justify-content: space-around;
+}
+
+.nobel-mark-state1 {
+  border: 2px solid red;
+}
+.nobel-mark-state2 {
+  border: 2px solid blue;
+}
