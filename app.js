@@ -261,24 +261,24 @@ function levelOneCard() {
   const cardNumber =
     allLevelOneCards[Math.floor(Math.random() * allLevelOneCards.length)];
   allLevelOneCards.splice(cardNumber - 1, 1);
-  return `/img/Cards/Level I/Lvl1-${cardNumber}.png`;
+  return encodeURI(`/img/Cards/Level I/Lvl1-${cardNumber}.png`);
 }
 function levelTwoCard() {
   const cardNumber =
     allLevelTwoCards[Math.floor(Math.random() * allLevelTwoCards.length)];
   allLevelTwoCards.splice(cardNumber - 1, 1);
-  return `/img/Cards/Level II/Lvl2-${cardNumber}.png`;
+  return encodeURI(`/img/Cards/Level II/Lvl2-${cardNumber}.png`);
 }
 function levelThreeCard() {
   const cardNumber =
     allLevelThreeCards[Math.floor(Math.random() * allLevelThreeCards.length)];
   allLevelThreeCards.splice(cardNumber - 1, 1);
-  return `/img/Cards/Level III/Lvl3-${cardNumber}.png`;
+  return encodeURI(`/img/Cards/Level III/Lvl3-${cardNumber}.png`);
 }
 function nobel() {
   const nobelNumber = allNobels[Math.floor(Math.random() * allNobels.length)];
   allNobels.splice(nobelNumber - 1, 1);
-  return `/img/Cards/Nobels/Nobel-${nobelNumber}.png`;
+  return encodeURI(`/img/Cards/Nobels/Nobel-${nobelNumber}.png`);
 }
 // Random cards when starting the game:
 for (let i = 1; i < 5; i++) {
