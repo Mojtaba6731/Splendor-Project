@@ -13,7 +13,38 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <div class="board-game">
+    <section class="section-1">
+      <h2 class="header-text">Splendor</h2>
+      <button class="guide-button" onclick="openPopup()">Guide</button>
+
+      <div class="guide-popup" style="display: none">
+        <div class="guide-content">
+          <img
+            src="img/guide/Rules_Splendor-1.webp"
+            alt="title"
+            class="rule-title"
+          />
+          <img
+            src="img/guide/Rules_Splendor-2.jpg"
+            alt="rules-1"
+            class="rule-img"
+          />
+          <img
+            src="img/guide/Rules_Splendor-3.jpg"
+            alt="rules-2"
+            class="rule-img"
+          />
+          <img
+            src="img/guide/Rules_Splendor-4.jpg"
+            alt="rules-3"
+            class="rule-img"
+          />
+
+          <button class="guide-close-button" onclick="closePopup()">X</button>
+        </div>
+      </div>
+    </section>
+    <section class="board-game">
       <div class="user1-board">
         <div class="cards-and-coins">
           <div class="user1-cards">
@@ -375,6 +406,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>

@@ -3,8 +3,66 @@
   src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 }
 body {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
   font-family: "Lato", sans-serif;
+  background-image: url(img/backgroundImg/pexels-jeswin-thomas-700971.jpg);
 }
+.header-text {
+  color: aliceblue;
+  font-size: xx-large;
+}
+.section-1 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.guide-button {
+  font-size: medium;
+}
+.guide-popup {
+  position: absolute;
+  top: 36px;
+  background-color: rgb(252, 252, 252);
+  width: 80vw;
+  height: max-content;
+  color: black;
+  padding: 36px 36px;
+  border-radius: 8px;
+}
+.guide-content {
+  display: flex !important;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 24px;
+  font-size: large;
+  color: rgb(83, 83, 83);
+  line-height: 1.5em;
+}
+.guide-close-button {
+  position: absolute;
+  border: 1px solid lightgray;
+  background-color: rgb(255, 255, 255);
+  font-size: large;
+  padding: 8px 14px;
+  color: brown;
+  right: 36px;
+  top: 36px;
+}
+.rule-title {
+  margin-bottom: 16px;
+  width: max-content;
+  height: max-content;
+}
+.rule-img {
+  width: 100vh;
+  height: max-content;
+}
+
 .random-nobel,
 .card {
   border: 1px solid rgb(170, 170, 170);

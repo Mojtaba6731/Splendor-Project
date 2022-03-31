@@ -1,6 +1,17 @@
 // Drag and Drop Section:
 const coins = document.querySelectorAll(".coin");
 const cards = document.querySelectorAll(".card");
+const guide = document.querySelector(".guide-popup");
+function openPopup() {
+  guide.style.display = "block";
+  // Updates: set window background color black
+  // document.body.style.background = "#353333";
+}
+
+function closePopup() {
+  guide.style.display = "none";
+  // document.body.style.background = "white";
+}
 
 let dragged, cardImg;
 const dragStart = function () {
