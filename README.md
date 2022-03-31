@@ -12,3 +12,5 @@
   
   <p>In the end if you wanna take a look:</p>
   <a href="https://mojtaba6731.github.io/Splendor-Project/">here is a Live Preview</a>
+   
+   <a href="https://boardgamegeek.com/boardgame/148228/splendor"> learn more </a>
