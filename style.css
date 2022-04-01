@@ -1,14 +1,11 @@
 @font-face {
-  font-family: "Lato", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: MiddleEarth;
+  src: url("font/Middleearth-ao6m.ttf");
 }
 body {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-  font-family: "Lato", sans-serif;
-  background-image: url(img/backgroundImg/pexels-jeswin-thomas-700971.jpg);
+  font-family: MiddleEarth;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url(img/backgroundImg/middleEarth-map.jpg);
 }
 .header-text {
   color: aliceblue;
@@ -21,6 +18,7 @@ body {
   justify-content: center;
 }
 .guide-button {
+  font-family: MiddleEarth;
   font-size: medium;
 }
 .guide-popup {
@@ -65,10 +63,12 @@ body {
 
 .random-nobel,
 .card {
-  border: 1px solid rgb(170, 170, 170);
+  border: 2px solid rgb(170, 170, 170);
   height: 160px;
   width: 100px;
   margin: 8px 6px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35) !important;
+  background: rgba(0, 0, 0, 0.3);
 }
 .random-nobel {
   border: none;
@@ -90,7 +90,7 @@ img {
   font-size: 36px;
   color: rgb(255, 255, 255);
   margin: 12px;
-  border: 1px solid rgb(170, 170, 170);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 30px;
 }
 
