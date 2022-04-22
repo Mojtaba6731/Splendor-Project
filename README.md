@@ -11,5 +11,7 @@
   <p>also It's my pleasure if you want to fork and help me on this project wiht your ideas</p>
   
   <p>In the end if you wanna take a look:</p>
-  <a href="https://mojtaba6731.github.io/Splendor-Project/">here is a Live Preview</a>
-   
+  ===> <a href="https://mojtaba6731.github.io/Splendor-Project/">here is a Live Preview</a>
+  </br>
+  </br>
+  ===> <a href="https://www.behance.net/gallery/140680685/Splendor">and in Behance</a>
